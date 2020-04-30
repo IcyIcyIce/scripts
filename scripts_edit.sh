@@ -1,3 +1,3 @@
 #!/bin/bash
 
-vim "$(find ${SCRIPTS_DIR} -type f |fzf -i)"
+vim "$(find ${1} -type f |grep -v -e '.git' |fzf -i)"
