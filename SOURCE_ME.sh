@@ -4,7 +4,7 @@
 export SCRIPTS_DIR="${HOME}/.scripts"
 
 # Common aliases
-alias ll="ls -ltrh"
+alias ll="ls -la"
 
 # Aliases for commands I use
 alias se="${SCRIPTS_DIR}/scripts_edit.sh ${SCRIPTS_DIR}"
