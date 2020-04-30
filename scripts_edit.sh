@@ -1,3 +1,4 @@
 #!/bin/bash
 
-vim "$(find ${1} -type f |grep -v -e '.git' |fzf -i)"
+file="$(find ${1} -type f |grep -v -e '.git' |fzf -i)"
+[ ! -z $file ] && vim $file
