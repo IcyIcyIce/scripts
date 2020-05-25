@@ -9,5 +9,5 @@ alias ll="ls -la"
 # Aliases for commands I use
 alias se="${SCRIPTS_DIR}/scripts_edit.sh ${SCRIPTS_DIR}"
 alias fe="${SCRIPTS_DIR}/scripts_edit.sh"
-alias check="${SCRIPTS_DIR}/shellcheck.sh"
+alias shellcheck="shellcheck -s bash"
 alias brew_clean="${SCRIPTS_DIR}/brew_clean.sh"
