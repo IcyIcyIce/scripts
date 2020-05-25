@@ -12,5 +12,8 @@ set tabstop=4
 set softtabstop=4
 set expandtab "tabs are spaces
 
+syntax on
+set nocompatible
+
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
