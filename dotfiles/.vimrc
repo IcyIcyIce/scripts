@@ -8,8 +8,8 @@ set showmatch
 set incsearch "search as characters are typed
 set hlsearch "highlight matches
 
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set expandtab "tabs are spaces
 
 syntax on
