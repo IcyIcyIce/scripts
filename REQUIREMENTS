@@ -1,2 +1,5 @@
-shellcheck
+ShellCheck
 fzf
+vim
+zsh
+git
