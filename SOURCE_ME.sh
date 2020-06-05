@@ -10,8 +10,7 @@ source "${SCRIPTS_DIR}/colors.sh"
 alias ll="ls -la"
 
 # Fuzzy finder
-alias se="\${SCRIPTS_DIR}/scripts_edit.sh \${SCRIPTS_DIR}"
-alias fe="\${SCRIPTS_DIR}/scripts_edit.sh"
+alias se="\${SCRIPTS_DIR}/scripts_edit.sh"
 
 # Shellcheck
 alias shellcheck="shellcheck -s bash"
