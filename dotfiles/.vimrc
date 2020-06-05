@@ -1,4 +1,4 @@
-set number
+set relativenumber
 set showcmd "shows command line on bottom
 set cursorline "highlight current line
 set wildmenu
