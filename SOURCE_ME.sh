@@ -1,68 +1,29 @@
 #!/bin/bash
 
-# Colors
-## Formatting
-export RESET='\e[0m'
-export BOLD='\e[1m'
-export DIM='\e[2m'
-export UNDERLINED='\e[4m'
-export BLINK='\e[5m'
-export REVERSE='\e[7m'
-##  Foreground
-export FG_DEFAULT='\e[39m'
-export FG_BLACK='\e[30m'
-export FG_RED='\e[31m'
-export FG_GREEN='\e[32m'
-export FG_YELLOW='\e[33m'
-export FG_BLUE='\e[34m'
-export FG_MAGENTA='\e[35m'
-export FG_CYAN='\e[36m'
-export FG_LIGHTGRAY='\e[37m'
-export FG_DARKGRAY='\e[90m'
-export FG_LIGHTRED='\e[91m'
-export FG_LIGHTGREEN='\e[92m'
-export FG_LIGHTYELLOW='\e[93m'
-export FG_LIGHTBLUE='\e[94m'
-export FG_LIGHTMAGENTA='\e[95m'
-export FG_LIGHTCYAN='\e[96m'
-export FG_WHILE='\e[97m'
-## Background
-export BG_DEFAULT='\e[49m'
-export BG_BLACK='\e[40m'
-export BG_RED='\e[41m'
-export BG_GREEN='\e[42m'
-export BG_YELLOW='\e[43m'
-export BG_BLUE='\e[44m'
-export BG_MAGENTA='\e[45m'
-export BG_CYAN='\e[46m'
-export BG_LIGHTGRAY='\e[47m'
-export BG_DARKGRAY='\e[100m'
-export BG_LIGHTRED='\e[101m'
-export BG_LIGHTGREEN='\e[102m'
-export BG_LIGHTYELLOW='\e[103m'
-export BG_LIGHTBLUE='\e[104m'
-export BG_LIGHTMAGENTA='\e[105m'
-export BG_LIGHTCYAN='\e[106m'
-export BG_WHILE='\e[107m'
-
 # Directory where my scripts reside
 export SCRIPTS_DIR="${HOME}/.scripts"
+
+# Colors
+source "${SCRIPTS_DIR}/colors.sh"
 
 # Common aliases
 alias ll="ls -la"
 
 # Fuzzy finder
-alias se="${SCRIPTS_DIR}/scripts_edit.sh ${SCRIPTS_DIR}"
-alias fe="${SCRIPTS_DIR}/scripts_edit.sh"
+alias se="\${SCRIPTS_DIR}/scripts_edit.sh \${SCRIPTS_DIR}"
+alias fe="\${SCRIPTS_DIR}/scripts_edit.sh"
 
 # Shellcheck
 alias shellcheck="shellcheck -s bash"
 
 # Brew
-alias brew_clean="${SCRIPTS_DIR}/brew_clean.sh"
+alias brew_clean="\${SCRIPTS_DIR}/brew_clean.sh"
 
 # Weather
-alias weather="${SCRIPTS_DIR}/weather.sh"
+alias weather="\${SCRIPTS_DIR}/weather.sh"
+
+# Git
+alias git_status="\${SCRIPTS_DIR}/git_statusbar.sh"
 
 # PS1
-export PS1="${FG_BLUE}${BOLD} [ ${FG_LIGHTBLUE}\u${FG_YELLOW}@${FG_MAGENTA}\h ${FG_BLUE}] ${FG_BLUE}\w\n ${FG_LIGHTRED}\$${RESET} "
+export PS1="${FG_BLUE}${BOLD} [ ${FG_LIGHTBLUE}\u${FG_YELLOW}@${FG_MAGENTA}\h ${FG_BLUE}] ${FG_BLUE}\w \$(git_status)\n ${FG_LIGHTRED}\$${RESET} "
