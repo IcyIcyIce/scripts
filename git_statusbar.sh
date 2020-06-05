@@ -16,12 +16,12 @@ git_branch="$(git branch |cut -d' ' -f2)"
 # Change color according to status
 ## Untracked files
 git_status="$(git status)"
-git_ahead="$(echo git_status |grep -c 'Your branch is ahead')"
-[ "$git_ahead" -ne 0 ] && result_color="$FG_GREEN" && append_text+="${FG_MAGENTA}!"
+git_ahead="$(echo $git_status |grep -c 'Your branch is ahead')"
+[ "$git_ahead" -ne 0 ] && result_color="$FG_GREEN" && append_text+="${FG_LIGHTMAGENTA}!"
 git_committed="$(echo $git_status |grep -c 'Changes to be committed')"
 [ "$git_committed" -ne 0 ] && result_color="$FG_YELLOW"
 git_untracked="$(echo $git_status |grep -c Untracked)"
-[ "$git_untracked" -ne 0 ] && result_color="$FG_YELLOW" && append_text+="${FG_RED}*"
+[ "$git_untracked" -ne 0 ] && result_color="$FG_YELLOW" && append_text+="${FG_LIGHTRED}*"
 git_modified="$(echo $git_status |grep -c 'Changes not staged')"
 [ "$git_modified" -ne 0 ] && result_color="$FG_RED"
 
