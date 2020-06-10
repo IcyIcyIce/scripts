@@ -2,24 +2,16 @@
 
 # Directory where my scripts reside
 export SCRIPTS_DIR="${HOME}/.scripts"
+source "${SCRIPTS_DIR}/modules.sh"
 
 # Common aliases
 alias ll="ls -la"
 
-# Fuzzy finder
-alias se="\${SCRIPTS_DIR}/scripts_edit.sh"
-
 # Shellcheck
 alias shellcheck="shellcheck -s bash"
 
-# Brew
-alias brew_clean="\${SCRIPTS_DIR}/brew_clean.sh"
-
 # Weather
 alias weather="\${SCRIPTS_DIR}/weather.sh"
-
-# Git
-alias git_status="\${SCRIPTS_DIR}/git_statusbar.sh"
 
 # Vim
 alias vim="vim -u \${HOME}/.scripts/dotfiles/.vimrc"
