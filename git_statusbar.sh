@@ -21,7 +21,7 @@ git_ahead="$(echo $git_status |grep -c 'Your branch is ahead')"
 git_committed="$(echo $git_status |grep -c 'Changes to be committed')"
 [ "$git_committed" -ne 0 ] && result_color="$FG_YELLOW"
 git_untracked="$(echo $git_status |grep -c Untracked)"
-[ "$git_untracked" -ne 0 ] && result_color="$FG_YELLOW" && append_text+="${FG_LIGHTRED}*"
+[ "$git_untracked" -ne 0 ] && append_text+="${FG_LIGHTRED}*"
 git_modified="$(echo $git_status |grep -c 'Changes not staged')"
 [ "$git_modified" -ne 0 ] && result_color="$FG_RED"
 
