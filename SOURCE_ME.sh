@@ -3,8 +3,6 @@
 # Directory where my scripts reside
 export SCRIPTS_DIR="${HOME}/.scripts"
 
-# Colors
-
 # Common aliases
 alias ll="ls -la"
 
@@ -22,6 +20,9 @@ alias weather="\${SCRIPTS_DIR}/weather.sh"
 
 # Git
 alias git_status="\${SCRIPTS_DIR}/git_statusbar.sh"
+
+# Vim
+alias vim="vim -u \${HOME}/.scripts/dotfiles/.vimrc"
 
 # Appearance
 case "${SHELL##*/}" in
