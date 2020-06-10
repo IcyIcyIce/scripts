@@ -1,4 +1,4 @@
-source "${SCRIPTS_DIR}/brew_clean.sh"
-source "${SCRIPTS_DIR}/git_statusbar.sh"
-source "${SCRIPTS_DIR}/scripts_edit.sh"
-source "${SCRIPTS_DIR}/weather.sh"
+source "${SCRIPTS_DIR}/modules/brew_clean.sh"
+source "${SCRIPTS_DIR}/modules/git_statusbar.sh"
+source "${SCRIPTS_DIR}/modules/scripts_edit.sh"
+source "${SCRIPTS_DIR}/modules/weather.sh"
