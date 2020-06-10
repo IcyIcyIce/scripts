@@ -14,6 +14,7 @@ set expandtab "tabs are spaces
 
 syntax on
 set nocompatible
+set backspace=indent,eol,start "enable typical backspace
 
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
