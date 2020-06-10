@@ -10,9 +10,6 @@ source "${SCRIPTS_DIR}/modules.sh"
 # Shellcheck
 alias shellcheck="shellcheck -s bash"
 
-# Weather
-alias weather="\${SCRIPTS_DIR}/weather.sh"
-
 # Appearance
 case "${SHELL##*/}" in
   "bash")
