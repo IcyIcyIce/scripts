@@ -24,5 +24,12 @@ alias weather="\${SCRIPTS_DIR}/weather.sh"
 # Git
 alias git_status="\${SCRIPTS_DIR}/git_statusbar.sh"
 
-# PS1
-export PS1="${FG_BLUE}${BOLD} [ ${FG_LIGHTBLUE}\u${FG_YELLOW}@${FG_MAGENTA}\h ${FG_BLUE}] ${FG_BLUE}\w \$(git_status)\n ${FG_LIGHTRED}\$${RESET} "
+# Appearance
+case "${SHELL##*/}" in
+  "bash")
+    export PS1="${FG_BLUE}${BOLD} [ ${FG_LIGHTBLUE}\u${FG_YELLOW}@${FG_MAGENTA}\h ${FG_BLUE}] ${FG_BLUE}\w \$(git_status)\n ${FG_LIGHTRED}\$${RESET} "
+    ;;
+  "zsh")
+    #TBD
+    ;;
+esac
