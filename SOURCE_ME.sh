@@ -26,10 +26,9 @@ alias git_status="\${SCRIPTS_DIR}/git_statusbar.sh"
 # Appearance
 case "${SHELL##*/}" in
   "bash")
-    source "${SCRIPTS_DIR}/colors.sh"
-    export PS1="${FG_BLUE}${BOLD} [ ${FG_LIGHTBLUE}\u${FG_YELLOW}@${FG_MAGENTA}\h ${FG_BLUE}] ${FG_BLUE}\w \$(git_status)\n ${FG_LIGHTRED}\$${RESET} "
+    source "${SCRIPTS_DIR}/bash/profile.sh"
     ;;
   "zsh")
-    source "${SCRIPTS_DIR}/zsh/zsh.sh"
+    source "${SCRIPTS_DIR}/zsh/profile.sh"
     ;;
 esac
