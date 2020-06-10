@@ -3,10 +3,6 @@
 # If not git repository, exit
 [ ! "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ] && exit 0
 
-# Colors
-source "${SCRIPTS_DIR}/colors.sh"
-result_color="$FG_GREEN"
-
 git_branch="$(git branch |cut -d' ' -f2)"
 
 # Number of modified files
@@ -15,6 +11,7 @@ git_branch="$(git branch |cut -d' ' -f2)"
 
 # Change color according to status
 ## Untracked files
+result_color="$FG_GREEN"
 git_status="$(git status)"
 git_ahead="$(echo $git_status |grep -c 'Your branch is ahead')"
 [ "$git_ahead" -ne 0 ] && result_color="$FG_GREEN" && append_text+="${FG_LIGHTMAGENTA}!"
