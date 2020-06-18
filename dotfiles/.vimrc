@@ -16,5 +16,9 @@ syntax on
 set nocompatible
 set backspace=indent,eol,start "enable typical backspace
 
+" Highlight unwanted whitespace
+set listchars=tab:>·,trail:~
+set list
+
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
