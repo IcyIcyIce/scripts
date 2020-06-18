@@ -1,4 +1,6 @@
-set relativenumber
+" "Hybrid" line numbers
+set nu rnu " number relativenumber
+
 set showcmd "shows command line on bottom
 set cursorline "highlight current line
 set wildmenu
