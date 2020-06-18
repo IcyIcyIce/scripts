@@ -4,6 +4,9 @@ function git_status() {
   # If not git repository, exit
   [ ! "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ] && exit 0
 
+  # Git top-level directory name
+  git_dir="$(basename "$(git rev-parse --show-toplevel)")"
+
   git_branch="$(git branch |cut -d' ' -f2)"
 
   # Change color according to status
@@ -20,6 +23,6 @@ function git_status() {
   git_modified="$(echo $git_response |grep -c 'Changes not staged')"
   [ "$git_modified" -ne 0 ] && result_color="$FG_RED"
 
-  result="${BOLD}${result_color}${git_branch}"
-  echo -e "${result} ${append_text}"
+  result="${BOLD}${result_color}${git_branch}@${git_dir} ${append_text} ${RESET}"
+  echo -e "${result}"
 }
