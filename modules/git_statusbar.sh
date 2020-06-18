@@ -6,10 +6,6 @@ function git_status() {
 
   git_branch="$(git branch |cut -d' ' -f2)"
 
-  # Number of modified files
-  #git_modified="$(git status |grep 'modified:' |wc -l)"
-  #[ "$git_modified" -gt 0 ] && result_color="$FG_RED"
-
   # Change color according to status
   unset append_text
   result_color="$FG_GREEN"
