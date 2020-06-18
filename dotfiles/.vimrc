@@ -22,5 +22,11 @@ set backspace=indent,eol,start "enable typical backspace
 set listchars=tab:>·,trail:~
 set list
 
+" Set leader
 let mapleader=","
+
+" Hide search highlighting
 nnoremap <leader><space> :nohlsearch<CR>
+
+" Show/Hide line numbers
+nnoremap <F12> :set invnu<CR>:set invrnu<CR>
