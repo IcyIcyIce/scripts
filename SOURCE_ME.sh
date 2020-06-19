@@ -6,10 +6,10 @@ alias vim="vim -u \${HOME}/.scripts/dotfiles/.vimrc"
 # Directory where my scripts reside
 export SCRIPTS_DIR="${HOME}/.scripts"
 source "${SCRIPTS_DIR}/modules.sh"
-alias sc="cd ${SCRIPTS_DIR}"
+alias sc="cd \${SCRIPTS_DIR}"
 
 # Shellcheck
-alias shellcheck="shellcheck -s bash"
+alias shellcheck="shellcheck -s bash -e SC1090"
 
 # Appearance
 case "${SHELL##*/}" in
