@@ -10,7 +10,7 @@ sudo dnf install $(cat REQUIREMENTS)
 brew install $(cat REQUIREMENTS)
 ```
 ## Usage
-Source the SOURCE_ME.sh script in your profile, maybe change the path in it. Example: 
+Source the SOURCE_ME.sh script in your profile, maybe change the path in it. Example:
 ```bash
 [ -f "${HOME}/.scripts/SOURCE_ME.sh" ] && source "${HOME}/.scripts/SOURCE_ME.sh"
 ```
