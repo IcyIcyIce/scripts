@@ -9,7 +9,7 @@ source "${SCRIPTS_DIR}/modules.sh"
 alias sc="cd \${SCRIPTS_DIR}"
 
 # Shellcheck
-alias shellcheck="shellcheck -s bash -e SC1090"
+alias shellcheck="shellcheck -s bash -e SC1090,SC2148"
 
 # Appearance
 case "${SHELL##*/}" in
