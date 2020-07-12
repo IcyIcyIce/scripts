@@ -10,6 +10,9 @@ alias sc="cd \${SCRIPTS_DIR}"
 
 # Shellcheck
 alias shellcheck="shellcheck -s bash -e SC1090,SC2148"
+# List of disabled checks:
+# SC2148: Tips depend on target shell and yours is unknown. Add a shebang or a 'shell' directive
+# SC1090: Sourcing non-absolute paths
 
 # Appearance
 case "${SHELL##*/}" in
