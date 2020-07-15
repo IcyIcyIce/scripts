@@ -7,7 +7,7 @@ function git_status() {
   # Git top-level directory name
   git_dir="$(basename "$(git rev-parse --show-toplevel)")"
 
-  git_branch="$(git branch |cut -d' ' -f2)"
+  git_branch="$(git branch | grep '*' |cut -d' ' -f2)"
 
   # Change color according to status
   unset append_text
