@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Vim
-alias vim="vim -u \${HOME}/.scripts/dotfiles/.vimrc"
+alias vim="vim -u \${HOME}/.scripts/dotfiles/vimrc"
 
 # Directory where my scripts reside
 export SCRIPTS_DIR="${HOME}/.scripts"
