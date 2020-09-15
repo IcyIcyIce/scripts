@@ -6,3 +6,10 @@ function brew_clean() {
   rm -f Brewfile
   echo "Done"
 }
+
+function brew_list() {
+  brew bundle dump
+  cat Brewfile
+  rm -f Brewfile
+  echo "Done"
+}
