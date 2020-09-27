@@ -19,9 +19,6 @@ case "${SHELL##*/}" in
   "bash")
     source "${SCRIPTS_DIR}/bash/profile.sh"
     ;;
-  "zsh")
-    source "${SCRIPTS_DIR}/zsh/profile.sh"
-    ;;
 esac
 
 # Common aliases
