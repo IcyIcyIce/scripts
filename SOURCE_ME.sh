@@ -4,9 +4,9 @@
 alias vim="vim -u \${HOME}/.scripts/dotfiles/vimrc"
 
 # Directory where my scripts reside
-export SCRIPTS_DIR="${HOME}/.scripts"
-source "${SCRIPTS_DIR}/modules.sh"
-alias sc="cd \${SCRIPTS_DIR}"
+export __SCRIPTS_DIR="${HOME}/.scripts"
+source "${__SCRIPTS_DIR}/modules.sh"
+alias sc="cd \${__SCRIPTS_DIR}"
 
 # Shellcheck
 alias shellcheck="shellcheck -s bash -e SC1090,SC2148"
@@ -17,7 +17,7 @@ alias shellcheck="shellcheck -s bash -e SC1090,SC2148"
 # Appearance
 case "${SHELL##*/}" in
   "bash")
-    source "${SCRIPTS_DIR}/bash/profile.sh"
+    source "${__SCRIPTS_DIR}/bash/profile.sh"
     ;;
 esac
 
