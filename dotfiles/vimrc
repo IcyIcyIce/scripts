@@ -2,7 +2,12 @@
 set nu rnu " number relativenumber
 
 set showcmd "shows command line on bottom
-set cursorline "highlight current line
+
+"set cursorline "highlight current line
+set cursorline
+" Default Colors for CursorLine
+highlight  CursorLine cterm=bold ctermbg=236 ctermfg=None
+
 set wildmenu
 set lazyredraw
 set showmatch
