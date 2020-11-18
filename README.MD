@@ -15,6 +15,6 @@ Source the SOURCE_ME.sh script in your profile, maybe change the path in it. Exa
 ###############################################
 # Uncomment any line to disabled said feature #
 ###############################################
-#  export __FZF_DISABLED=true
+#  export __DISABLE_FZF=true
 [ -f "${HOME}/.scripts/SOURCE_ME.sh" ] && source "${HOME}/.scripts/SOURCE_ME.sh"
 ```
